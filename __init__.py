@@ -23,4 +23,6 @@ class WrapPrint:
                 if self.pos >= self.width:
                     print('')
                     self.pos = 0
-        print(end, end='')                    
+        print(end, end='')
+        if '\n' in end:
+            self.pos = 0                  
