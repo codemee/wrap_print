@@ -1,0 +1,19 @@
+[project]
+name = "wrap-print"
+version = "0.1.0"
+description = "A print tool that wraps text to a specified width."
+readme = "README.md"
+authors = [
+    { name = "meebox", email = "meebox@gmail.com" }
+]
+requires-python = ">=3.3"
+dependencies = [
+    "twine>=1.15.0",
+]
+
+[project.scripts]
+wrap-print = "wrap_print:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
